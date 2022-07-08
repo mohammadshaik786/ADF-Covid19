@@ -4,9 +4,9 @@ A project on covid19 Prediction/Reporting for Azure Data Engineer
 
 ---------------------------------------------------------------------
 
-Project Overview: 
+# Project Overview: 
 
-Prediction: Data Platform in which Data Scientists can run ML models to predict the spread of virus and find insights from the data. 
+# Prediction: Data Platform in which Data Scientists can run ML models to predict the spread of virus and find insights from the data. 
 
 Data Lake to be built with the following data to aid Data Scientists to predict the spread of 	the virus/ mortality 						 
 
@@ -22,7 +22,7 @@ Data Lake to be built with the following data to aid Data Scientists to predict 
 
 	 
 
-Reporting: Data Platform in which Data Analysts can easily generate reports on Covid19 trends by using reporting tool. 
+# Reporting: Data Platform in which Data Analysts can easily generate reports on Covid19 trends by using reporting tool. 
 
 Data Warehouse to be built with the following data to aid Reporting on Trends	 
 
@@ -35,7 +35,7 @@ Data Warehouse to be built with the following data to aid Reporting on Trends
 *Testing Numbers  
 
 
-Data Sources: 
+# Data Sources: 
 
 ECDC (European Center for Disease Control & Prevention) Data contains Confirmed Cases, Mortality, Hospitalization/ICU cases, Testing numbers 
 
