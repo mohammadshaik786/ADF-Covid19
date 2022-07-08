@@ -1,0 +1,29 @@
+{
+	"name": "ds_population_raw_tsv_sink",
+	"properties": {
+		"description": "Dataset for ",
+		"linkedServiceName": {
+			"referenceName": "ls_adls_covidreportingdatlak",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "raw"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "population_by_age_tsv",
+				"folderPath": "population",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

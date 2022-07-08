@@ -1,0 +1,24 @@
+{
+	"name": "ds_cases_deaths_raw_csv_http",
+	"properties": {
+		"description": "Given Relative URL i.e we didn't use any parameters.",
+		"linkedServiceName": {
+			"referenceName": "ls_http_opendata_ecdc_eu ropa_eu",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "cloudboxacademy/covid19/main/ecdc_data/cases_deaths.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

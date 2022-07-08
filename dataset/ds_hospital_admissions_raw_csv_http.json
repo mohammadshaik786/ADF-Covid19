@@ -1,0 +1,32 @@
+{
+	"name": "ds_hospital_admissions_raw_csv_http",
+	"properties": {
+		"description": "Parameters were used dynamically ",
+		"linkedServiceName": {
+			"referenceName": "ls_http_opendata_ecdc_eu ropa_eu",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"relativeURL": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().relativeURL",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
